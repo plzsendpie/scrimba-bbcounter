@@ -6,9 +6,13 @@ function checkScore(){
         document.getElementById("score--home").style.color = "#FBBF24"
         document.getElementById("score--guest").style.color = "#F94F6D"
 
-    }else{
+    }else if (homeScore < guestScore){
         document.getElementById("score--guest").style.color = "#FBBF24"
         document.getElementById("score--home").style.color = "#F94F6D"
+    }else{
+        document.getElementById("score--guest").style.color = "#F94F6D"
+        document.getElementById("score--home").style.color = "#F94F6D"
+    
     }
 }
 
